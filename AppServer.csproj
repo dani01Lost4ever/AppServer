@@ -35,6 +35,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +52,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CancellareCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellareCartella.Designer.cs">
+      <DependentUpon>CancellareCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancellareFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancellareFile.Designer.cs">
+      <DependentUpon>CancellareFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprimereCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprimereCartella.Designer.cs">
+      <DependentUpon>ComprimereCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopiareCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopiareCartella.Designer.cs">
+      <DependentUpon>CopiareCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopiareFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopiareFile.Designer.cs">
+      <DependentUpon>CopiareFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreazioneCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreazioneCartella.Designer.cs">
+      <DependentUpon>CreazioneCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreazioneFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreazioneFile.Designer.cs">
+      <DependentUpon>CreazioneFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DecompressioneCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DecompressioneCartella.Designer.cs">
+      <DependentUpon>DecompressioneCartella.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +108,57 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RinominareCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RinominareCartella.Designer.cs">
+      <DependentUpon>RinominareCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RinominareFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RinominareFile.Designer.cs">
+      <DependentUpon>RinominareFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpostareCartella.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpostareCartella.Designer.cs">
+      <DependentUpon>SpostareCartella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpostareFIle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpostareFIle.Designer.cs">
+      <DependentUpon>SpostareFIle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CancellareCartella.resx">
+      <DependentUpon>CancellareCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancellareFile.resx">
+      <DependentUpon>CancellareFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprimereCartella.resx">
+      <DependentUpon>ComprimereCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopiareCartella.resx">
+      <DependentUpon>CopiareCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopiareFile.resx">
+      <DependentUpon>CopiareFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreazioneCartella.resx">
+      <DependentUpon>CreazioneCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreazioneFile.resx">
+      <DependentUpon>CreazioneFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DecompressioneCartella.resx">
+      <DependentUpon>DecompressioneCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +167,21 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RinominareCartella.resx">
+      <DependentUpon>RinominareCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RinominareFile.resx">
+      <DependentUpon>RinominareFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpostareCartella.resx">
+      <DependentUpon>SpostareCartella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpostareFIle.resx">
+      <DependentUpon>SpostareFIle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
