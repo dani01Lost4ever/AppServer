@@ -26,7 +26,6 @@ namespace AppServer
                 button2.Visible = true;
                 richTextBox2.Visible = true;
                 button3.Visible = true;
-                progressBar1.Visible = true;
             }
         }
 
@@ -36,7 +35,6 @@ namespace AppServer
             {
                 richTextBox2.Text = folderBrowserDialog1.SelectedPath;
                 button3.Enabled = true;
-                progressBar1.Enabled = true;
             }
         }
 

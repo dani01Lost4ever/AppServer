@@ -31,9 +31,12 @@ namespace AppServer
         {
             try
             {
-                File.Delete(richTextBox1.Text);
-                MessageBox.Show("Deleted successfully");
-                Close();
+                if (MessageBox.Show("sei sicuro di voler cancellare la cartella?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    File.Delete(richTextBox1.Text);
+                    MessageBox.Show("Deleted successfully");
+                    Close();
+                }
             }
             catch (Exception ex)
             {

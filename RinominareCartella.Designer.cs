@@ -37,7 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.Rinomina = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // label1
@@ -119,19 +118,11 @@
             this.Rinomina.Visible = false;
             this.Rinomina.Click += new System.EventHandler(this.button2_Click);
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(19, 323);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(759, 23);
-            this.progressBar1.TabIndex = 8;
-            // 
             // RinominareCartella
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Rinomina);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.label3);
@@ -158,6 +149,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.Button Rinomina;
-        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
